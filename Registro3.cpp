@@ -89,7 +89,29 @@ void agregar(){
     }
 
 }
-void eliminar(){
+void eliminar() {
+    string nombre;
+    cout << "Eliminar contacto" << endl;
+    cout << "..................." << endl;
+    cout << "Escribe el nombre completo del contacto a eliminar: ";
+    getline(cin, nombre);
+
+    bool encontrado = false;
+    for (int i = 0; i < num_contactos; i++) {
+        if (contactos[i].NombreCompleto == nombre) {
+            for (int j = i; j < num_contactos - 1; j++) {
+                contactos[j] = contactos[j + 1];
+            }
+            num_contactos--;
+            encontrado = true;
+            cout << "Contacto eliminado ." << endl;
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        cout << "Contacto no encontrado." << endl;
+    }
 }
 void mostrar_real(){
 	
