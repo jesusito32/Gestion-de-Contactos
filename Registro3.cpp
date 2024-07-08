@@ -114,7 +114,17 @@ void eliminar() {
     }
 }
 void mostrar_real(){
-	
+    cout << "Mostrando listado general de contactos" << endl;
+    cout << "..................." << endl;
+    for (int i = 0; i < num_contactos; i++) {
+        cout << "Nombre Completo: " << contactos[i].NombreCompleto << endl;
+        cout << "Sexo: " << contactos[i].sexo << endl;
+        cout << "Edad: " << contactos[i].edad << endl;
+        cout << "Telefono: " << contactos[i].telefono << endl;
+        cout << "Email: " << contactos[i].email << endl;
+        cout << "Nacionalidad: " << contactos[i].nacionalidad << endl;
+        cout << "-------------------" << endl;
+    }	
 }
 void mostrar(){
  
