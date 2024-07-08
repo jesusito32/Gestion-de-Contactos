@@ -128,5 +128,21 @@ void mostrar_real(){
 }
 void mostrar(){
  
-   
+ 	cout << "Mostrando listado de contactos existentes, ordenado por servidor de correo" << endl;
+    cout << "..................." << endl;
+
+    for (int i = 0; i < num_contactos - 1; i++) {
+        for (int j = i + 1; j < num_contactos; j++) {
+            if (obtenerDominio(contactos[i].email) > obtenerDominio(contactos[j].email)) {
+                contactoEmail temp = contactos[i];
+                contactos[i] = contactos[j];
+                contactos[j] = temp;
+            }
+        }
+    }
+
+    for (int i = 0; i < num_contactos; i++) {
+        cout << i + 1 << ". " << contactos[i].NombreCompleto << " - " << contactos[i].email << endl;
+    }
+  
 }
