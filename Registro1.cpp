@@ -85,7 +85,7 @@ void agregar(){
         
         num_contactos++;
     } else {
-        cout << "No se pueden agregar más contactos. Límite alcanzado." << endl;
+        cout << "No se pueden agregar mÃ¡s contactos. LÃ­mite alcanzado." << endl;
     }
 
 }
