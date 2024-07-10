@@ -31,8 +31,13 @@ int main(){
 	cout << "d) Mostrar listado de contactos existentes " << endl;
 	cout << "e) Salir del programa " << endl;
 	cin >> letter;
+<<<<<<< HEAD
 	do{			
 	cin.ignore();	
+=======
+	cin.ignore();
+	do{				
+>>>>>>> 81869a509dcebe209f086acb17c13c24c8753ccb
 	switch(letter){
 		case 'a':
 			agregar();
@@ -126,6 +131,7 @@ void mostrar_real(){
         cout << "-------------------" << endl;
     }	
 }
+<<<<<<< HEAD
    
 string obtenerDominio(const string& correo) {
     size_t pos = correo.find('@');
@@ -163,3 +169,9 @@ void mostrar(){
     }
 }
 
+=======
+void mostrar(){
+ 
+   
+}
+>>>>>>> 81869a509dcebe209f086acb17c13c24c8753ccb
